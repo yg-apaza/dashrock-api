@@ -18,4 +18,6 @@ def get_nearby_atms(
     request: AtmRequest,
     db: Session = Depends(deps.get_db)
 ) -> Any:
-    return crud.atm.get_all(db, request.radio)
+    return crud.atm.get_nearby(
+        db, request.latitud, request.longitud, request.radio, request.fecha
+    )
