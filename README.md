@@ -16,9 +16,7 @@
 5. Copiar archivo `.env` dentro de `/app`, se debe llamar exactamente `.env`
 6. Sigue las indicaciones en la seccion [Authentication > If you're developing locally](https://googleapis.dev/python/google-api-core/latest/auth.html) para autenticarte localmente con GCP
 
-Finalmente ejecutar
-
-- `python main.py`
+Finalmente ejecutar `python main.py`
 
 ## Deployar con Cloud Run (Entorno de produccion)
 
