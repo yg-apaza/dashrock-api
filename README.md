@@ -28,7 +28,7 @@ El archivo Dockerfile se puede construir y ejecutar con:
 En Google Cloud Run funciona ya que las credenciales estan precargadas. Para hacer un deploy, ejecutar:
 
 ```
-gcloud run deploy
+gcloud run deploy --set-env-vars "GCP_PROJECT=" --set-env-vars "GCP_DATASET=" --set-env-vars "SECRET_KEY=" --set-env-vars "^@^BACKEND_CORS_ORIGINS=" --set-env-vars "PRODUCTION=true"
 ```
 
 ## Notas adicionales
