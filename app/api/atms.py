@@ -14,7 +14,7 @@ from app import crud
 router = APIRouter()
 
 
-@router.get("/nearby", response_model=List[schemas.Atm])
+@router.post("/nearby", response_model=List[schemas.Atm])
 def get_nearby_atms(
     request: AtmRequest,
     db: Session = Depends(deps.get_db),
