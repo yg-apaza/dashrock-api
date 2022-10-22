@@ -4,7 +4,6 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from typing import List
 
-from app import models
 from app import schemas
 from app.api import deps
 from app.schemas.atm import AtmRequest
