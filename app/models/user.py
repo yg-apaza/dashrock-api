@@ -13,4 +13,3 @@ class User(Base):
     is_superuser = Column(Boolean(), default=False)
     is_internal_client = Column(Boolean())
     group = Column(String)
-    

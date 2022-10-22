@@ -13,7 +13,9 @@ PORT = env.int('PORT')
 
 PROJECT_NAME = 'my_template'
 
-SQLALCHEMY_DATABASE_URL = f'bigquery://{env.str("GCP_PROJECT")}/{env.str("GCP_DATASET")}'
+SQLALCHEMY_DATABASE_URL = (
+    f'bigquery://{env.str("GCP_PROJECT")}/{env.str("GCP_DATASET")}'
+)
 
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 8
 
