@@ -17,7 +17,6 @@ router = APIRouter()
 @router.post("/nearby", response_model=List[schemas.Atm])
 def get_nearby_atms(
     request: AtmRequest,
-    db: Session = Depends(deps.get_db),
-    current_user: models.User = Depends(deps.get_current_active_user),
+    db: Session = Depends(deps.get_db)
 ) -> Any:
     return crud.atm.get_all(db, request.radio)
