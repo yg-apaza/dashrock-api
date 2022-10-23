@@ -37,7 +37,7 @@ def get_nearby(
           )
           SELECT
             atms_geo.*,
-            IF(fatms.ATM_ID IS NOT NULL, true, false) AS status
+            IF(fatms.ATM_ID IS NULL, true, false) AS status
           FROM my_location, atms_geo
           LEFT JOIN failed_atms fatms ON fatms.ATM_ID = atms_geo.ATM
           WHERE ST_DWITHIN(my_location.point, atms_geo.latlon_geo, {radio})
