@@ -4,15 +4,15 @@ from datetime import datetime
 
 
 class Atm(BaseModel):
-    atm_id: Optional[str]
     latitud: Optional[float]
     longitud: Optional[float]
-    status: bool = True
     sitio: Optional[str]
     calle: Optional[str]
     estado: Optional[str]
     ciudad: Optional[str]
     colonia: Optional[str]
+    total_atms: int
+    total_atms_falla: int
 
     class Config:
         orm_mode = True
