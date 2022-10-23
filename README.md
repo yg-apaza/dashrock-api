@@ -1,5 +1,9 @@
 # DashRock
 
+> **URL de la API en Cloud Run: https://dashrock-api-ffsw7gfw5q-uc.a.run.app**
+>
+> **Documentacion de la API aqui: https://www.postman.com/test2gh/workspace/rocket/collection/247432-1075857e-1548-4e3b-a2c1-e4478cc2d560?action=share&creator=247432**
+
 ## Requerimientos
 
 - Python 3.8 o superior
